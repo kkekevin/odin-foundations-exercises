@@ -7,12 +7,22 @@ body {
     background-color: #1F2937;
 }
 
+.header-background {
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
 ul {
     display: flex;
     list-style-type: none;
+    padding-left: 0;
+    padding-right: 40px;
+    gap: 20px;
 }
 
 .first-one {
+    color: #F9FAF8;
+    font-weight: 700;
     margin-right: auto;
 }
 
@@ -21,13 +31,16 @@ ul {
 }
 
 img {
-    max-height: 300px;
+    max-height: 200px;
     width: auto;
     margin-left: auto;
+    padding-right: 40px;
 }
 
 .t-content {
     background-color: #E5E7EB;
+    padding: 40px;
+    padding-top: 15px;
 }
 
 .first-p {
@@ -46,7 +59,13 @@ a , .a {
 
 .second-p {
     text-align: center;
+    font-weight: 900;
 }
+
+.second-l {
+    justify-content: center;
+    gap: 10px;
+} 
 
 .third-p {
     font-style: italic;
@@ -57,8 +76,22 @@ a , .a {
 .blue-button {
     display: flex;
     background-color: #3882f6;
+    margin: 40px;
 }
 
 .s-button {
     margin-left: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.p-footer {
+    color: #F9FAF8
 }
