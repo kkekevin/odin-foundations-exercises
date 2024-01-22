@@ -29,10 +29,15 @@ h1 {
     background-color: hsl(240, 12%, 50%);
 }
 
-.greenText {
+.scoreDisplay {
+    font-size: 2rem;
+
+}
+
+.greenText, #playerScore {
     color: rgb(6, 233, 6);
 }
-.redText {
+.redText, #pcScore {
     color: rgb(207, 1, 1);
 }
 

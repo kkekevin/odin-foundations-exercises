@@ -2,7 +2,10 @@ const choices = ["rock", "paper", "scissors"];
 const playerDisplay = document.getElementById("player");
 const pcDisplay = document.getElementById("pc");
 const resultDisplay = document.getElementById("result");
-
+const playerScoreDisplay = document.getElementById("playerScore");
+const computerScoreDisplay = document.getElementById("pcScore");
+let pScore = 0;
+let pcScore = 0;
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
@@ -30,9 +33,13 @@ function game(pChoice) {
     switch (result) {
         case "YOU WIN!":
             resultDisplay.classList.add("greenText");
+            pScore++;
+            playerScoreDisplay.textContent = pScore;
             break;
         case "YOU LOSE!":
             resultDisplay.classList.add("redText");
+            pcScore++;
+            computerScoreDisplay.textContent = pcScore;
             break;
         default :
             resultDisplay.classList.remove("greenText", "redText");
