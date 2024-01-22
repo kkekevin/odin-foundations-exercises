@@ -20,10 +20,10 @@ function playRound (playerSelection, computerSelection) {
 }
 
 function game (pChoice) {
-    const computerChoice = choices[Math.floor(Math.random() * 3)]    
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
     let result = playRound(pChoice, computerChoice);
 
-    //playerDisplay.textContent = `player: ${pChoice}`;
-    //pcDisplay.textContent = `pc: ${computerChoice}`;
+    playerDisplay.textContent = `player: ${pChoice}`;
+    pcDisplay.textContent = `pc: ${computerChoice}`;
     resultDisplay.textContent = result;
 }
