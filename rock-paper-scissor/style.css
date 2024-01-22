@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 6rem;
 }
 
 .choices {
@@ -16,7 +16,7 @@ h1 {
 }
 
 .choices button {
-    font-size: 6rem;
+    font-size: 4.5rem;
     min-width: 100px;
     margin: 0 10px;
     border-radius: 250px;
@@ -27,14 +27,20 @@ h1 {
 
 .choices button:hover {
     background-color: hsl(240, 12%, 50%);
+}
 
+.greenText {
+    color: rgb(6, 233, 6);
+}
+.redText {
+    color: rgb(207, 1, 1);
 }
 
 #player, #pc {
     font-size: 2.5rem;
 }
 
-#tie {
+#result {
     font-size: 5rem;
     margin: 30px 0;
 }

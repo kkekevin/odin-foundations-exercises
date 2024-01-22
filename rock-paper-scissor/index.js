@@ -4,8 +4,8 @@ const pcDisplay = document.getElementById("pc");
 const resultDisplay = document.getElementById("result");
 
 
-function playRound (playerSelection, computerSelection) {
-    if(playerSelection === computerSelection) {
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
         return "it's a tie!"
     } else {
         switch (computerSelection) {
@@ -19,11 +19,22 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-function game (pChoice) {
+function game(pChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     let result = playRound(pChoice, computerChoice);
 
     playerDisplay.textContent = `player: ${pChoice}`;
     pcDisplay.textContent = `pc: ${computerChoice}`;
     resultDisplay.textContent = result;
+
+    switch (result) {
+        case "YOU WIN!":
+            resultDisplay.classList.add("greenText");
+            break;
+        case "YOU LOSE!":
+            resultDisplay.classList.add("redText");
+            break;
+        default :
+            resultDisplay.classList.remove("greenText", "redText");
+    }
 }
