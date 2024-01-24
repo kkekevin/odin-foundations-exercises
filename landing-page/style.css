@@ -20,10 +20,11 @@ ul {
     gap: 20px;
 }
 
-.first-one {
+#first-one {
     color: #F9FAF8;
     font-weight: 700;
     margin-right: auto;
+    font-size: 20px;
 }
 
 .header-content {
@@ -43,18 +44,26 @@ img {
     padding-top: 15px;
 }
 
-.first-p {
+#first-p {
     color: #F9FAF8;
     font-weight: bold;
-    font: 10px;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+#f-button {
+    margin-bottom: 16px;
+    border: 0;
 }
 
 button {
     background-color: #3882f6;
+    border-radius: 180px;
+    width: 120px;
 }
 
-a , .a {
+a , #a {
     color: #E5E7EB;
+    text-decoration: none;
 }
 
 .second-p {
