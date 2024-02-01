@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+}
+#container>div, #container>div>div{
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+}
