@@ -4,6 +4,7 @@ const pcDisplay = document.getElementById("pc");
 const resultDisplay = document.getElementById("result");
 const playerScoreDisplay = document.getElementById("playerScore");
 const computerScoreDisplay = document.getElementById("pcScore");
+const winning = document.getElementById("winning");
 let pScore = 0;
 let pcScore = 0;
 
@@ -44,4 +45,6 @@ function game(pChoice) {
         default :
             resultDisplay.classList.remove("greenText", "redText");
     }
+
+    (pScore > pcScore) ? winning.textContent = "Player is winning" : winning.textContent = "Computer is winning";
 }
