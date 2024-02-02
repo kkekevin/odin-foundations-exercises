@@ -5,8 +5,13 @@
 #container {
     display: flex;
 }
-#container>div, #container>div>div{
+#container>div, .etch {
     border: 1px solid black;
     height: 25px;
     width: 25px;
+    background-color: hsl(240, 12%, 80%);
+
+}
+#container>div, .etch:hover {
+    background-color: hsl(240, 12%, 50%);
 }
