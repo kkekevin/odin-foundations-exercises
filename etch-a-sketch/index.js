@@ -24,11 +24,14 @@ buttonGrid.addEventListener('click', () => {
     parentEtch.forEach(cell => cell.remove());
 
     createGrid(nGrid);
+    etch = document.querySelectorAll('.etch');
+    parentEtch = document.querySelectorAll('.etch1');
 });
 
 function createGrid(nGrid) {
     for (let i = 0; i < nGrid; i++) {
         const div = document.createElement('div');
+        div.classList.add('etch1');
         container.appendChild(div);
         for (let j = 0; j < nGrid; j++) {
             const child = document.createElement('div');
