@@ -4,8 +4,9 @@
 
 #container {
     display: flex;
+    flex-wrap: wrap;
 }
-#container>div, .etch {
+.etch {
     border: 1px solid black;
     height: 25px;
     width: 25px;
