@@ -26,6 +26,9 @@ buttonGrid.addEventListener('click', () => {
     createGrid(nGrid);
     etch = document.querySelectorAll('.etch');
     parentEtch = document.querySelectorAll('.etch1');
+    etch.forEach(cell => cell.addEventListener('mouseenter', () => {
+        cell.setAttribute('style', 'background-color: hsl(240, 12%, 50%);')
+    }));
 });
 
 function createGrid(nGrid) {
