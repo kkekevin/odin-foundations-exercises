@@ -10,9 +10,14 @@ function concatenate(number) {
 }
 
 function operate (sign) {
+    if (a != null) {
+        calcul();
+        operator = sign;
+    } else {
     operator = sign;
     a = parseInt(n);
     n = '';
+    }
 }
 
 function calcul() {
@@ -23,18 +28,22 @@ function calcul() {
         switch (operator) {
             case '+':
                 result = a + b;
+                a = result;
                 operationDisplay.textContent = `${result}`;
                 break;
             case '-':
                 result = a - b;
+                a = result;
                 operationDisplay.textContent = `${result}`;
                 break;
             case 'x':
                 result = a * b;
+                a = result;
                 operationDisplay.textContent = `${result}`;
                 break;
             case '/':
                 result = a / b;
+                a = result;
                 operationDisplay.textContent = `${result}`;
                 break;
             default:
@@ -47,7 +56,7 @@ function calcul() {
 
 clearDisplay.addEventListener('click', () => {
     n = '';
-    a = 0;
+    a = null;
     b = 0;
     operator = '';
     operationDisplay.textContent = '0';
