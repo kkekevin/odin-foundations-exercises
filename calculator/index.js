@@ -1,5 +1,5 @@
 const operationDisplay = document.getElementById('operation');
-const resultDisplay = document.getElementById('result');
+const clearDisplay = document.getElementById('ac');
 let n = '';
 var a, b, result;
 let operator = '';
@@ -9,7 +9,7 @@ function concatenate(number) {
     operationDisplay.textContent = `${n}`;
 }
 
-function op(sign) {
+function operate (sign) {
     operator = sign;
     a = parseInt(n);
     n = '';
@@ -23,24 +23,32 @@ function calcul() {
         switch (operator) {
             case '+':
                 result = a + b;
-                resultDisplay.textContent = `${result}`;
+                operationDisplay.textContent = `${result}`;
                 break;
             case '-':
                 result = a - b;
-                resultDisplay.textContent = `${result}`;
+                operationDisplay.textContent = `${result}`;
                 break;
             case 'x':
                 result = a * b;
-                resultDisplay.textContent = `${result}`;
+                operationDisplay.textContent = `${result}`;
                 break;
             case '/':
                 result = a / b;
-                resultDisplay.textContent = `${result}`;
+                operationDisplay.textContent = `${result}`;
                 break;
             default:
                 break;
         }
     } else {
-        resultDisplay.textContent = `${b}`;
+        operationDisplay.textContent = `${b}`;
     }
 }
+
+clearDisplay.addEventListener('click', () => {
+    n = '';
+    a = 0;
+    b = 0;
+    operator = '';
+    operationDisplay.textContent = '0';
+});
