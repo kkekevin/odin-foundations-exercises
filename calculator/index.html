@@ -9,36 +9,37 @@
 </head>
 
 <body>
-    <div class="calculator">
-        <div id="operation"></div>
-        <div id="result"></div>
-        <div class="numbers">
-            <button onclick="concatenate(1)">1</button>
-            <button onclick="concatenate(2)">2</button>
-            <button onclick="concatenate(3)">3</button>
+    <section class="container">
+        <div class="calculator">
+            <div id="screen">0</div>
+            <div class="numbers">
+                <button onclick="concatenate(1)">1</button>
+                <button onclick="concatenate(2)">2</button>
+                <button onclick="concatenate(3)">3</button>
+            </div>
+            <div class="numbers">
+                <button onclick="concatenate(4)">4</button>
+                <button onclick="concatenate(5)">5</button>
+                <button onclick="concatenate(6)">6</button>
+            </div>
+            <div class="numbers">
+                <button onclick="concatenate(7)">7</button>
+                <button onclick="concatenate(8)">8</button>
+                <button onclick="concatenate(9)">9</button>
+            </div>
+            <div class="numbers">
+                <button id="zero" onclick="concatenate(0)">0</button>
+                <button id="equal" onclick="calcul()">=</button>
+            </div>
+            <div class="operators">
+                <button id="add" onclick="operate('+')">+</button>
+                <button id="subtract" onclick="operate('-')">-</button>
+                <button id="multiply" onclick="operate('x')">x</button>
+                <button id="divide" onclick="operate('/')">/</button>
+                <button id="ac">AC</button>
+            </div>
         </div>
-        <div class="numbers">
-            <button onclick="concatenate(4)">4</button>
-            <button onclick="concatenate(5)">5</button>
-            <button onclick="concatenate(6)">6</button>
-        </div>
-        <div class="numbers">
-            <button onclick="concatenate(7)">7</button>
-            <button onclick="concatenate(8)">8</button>
-            <button onclick="concatenate(9)">9</button>
-        </div>
-        <div class="numbers">
-            <button id="zero" onclick="concatenate(0)">0</button>
-        </div>
-        <div class="operators">
-            <button id="add" onclick="operate('+')">+</button>
-            <button id="subtract" onclick="operate('-')">-</button>
-            <button id="multiply" onclick="operate('x')">x</button>
-            <button id="divide" onclick="operate('/')">/</button>
-            <button id="equal" onclick="calcul()">=</button>
-            <button id="ac">AC</button>
-        </div>
-    </div>
+    </section>
     <script src="index.js"></script>
 </body>
 

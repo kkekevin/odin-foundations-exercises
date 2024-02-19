@@ -1,4 +1,4 @@
-const operationDisplay = document.getElementById('operation');
+const operationDisplay = document.getElementById('screen');
 const clearDisplay = document.getElementById('ac');
 let n = '';
 var a, b, result;
