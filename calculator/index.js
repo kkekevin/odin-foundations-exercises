@@ -1,5 +1,6 @@
 const operationDisplay = document.getElementById('screen');
 const clearDisplay = document.getElementById('ac');
+const clear = document.getElementById('c');
 let n = '';
 var a, b, result;
 let operator = '';
@@ -62,4 +63,9 @@ clearDisplay.addEventListener('click', () => {
     b = 0;
     operator = '';
     operationDisplay.textContent = '0';
+});
+
+clear.addEventListener('click', () => {
+    n = n.replace(/.$/, '');
+    operationDisplay.textContent = `${n}`;
 });
