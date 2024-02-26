@@ -4,9 +4,17 @@ const clear = document.getElementById('c');
 let n = '';
 var a, b, result;
 let operator = '';
+let decimal = false;
 
 function concatenate(number) {
+    if (decimal && number == '.')
+        return;
+    if (!decimal && number == '.') {
+        n += number;
+        decimal = true;
+    } else {
     n += number.toString();
+    }
     operationDisplay.textContent = `${n}`;
 }
 
@@ -18,14 +26,15 @@ function operate (sign) {
         operator = sign;
     } else {
     operator = sign;
-    a = parseInt(n);
+    a = parseFloat(n);
     n = '';
     }
 }
 
 function calcul() {
-    b = parseInt(n);
+    b = parseFloat(n);
     n = '';
+    decimal = false;
     operationDisplay.textContent = `${n}`;
     if (a != null) {
         switch (operator) {
@@ -62,6 +71,7 @@ clearDisplay.addEventListener('click', () => {
     a = null;
     b = 0;
     operator = '';
+    decimal = false;
     operationDisplay.textContent = '0';
 });
 
