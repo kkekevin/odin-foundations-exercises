@@ -10,8 +10,10 @@ function concatenate(number) {
 }
 
 function operate (sign) {
-    if (a != null) {
+    if (a != null && n !== '') {
         calcul();
+        operator = sign;
+    } else if (a != null) {
         operator = sign;
     } else {
     operator = sign;
