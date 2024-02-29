@@ -20,7 +20,7 @@ ul {
     gap: 20px;
 }
 
-#first-one {
+#listHeader {
     color: #F9FAF8;
     font-weight: 700;
     margin-right: auto;
@@ -29,43 +29,49 @@ ul {
 
 .header-content {
     display: flex;
+    height: 400px;
 }
-
-img {
-    max-height: 200px;
-    width: auto;
-    margin-left: auto;
-    padding-right: 40px;
-}
-
 .t-content {
     background-color: #E5E7EB;
     padding: 40px;
     padding-top: 15px;
 }
 
-#first-p {
+#title {
     color: #F9FAF8;
     font-weight: bold;
     font-size: 48px;
     margin-bottom: 0;
+    width: 400px;
 }
-#f-button {
+a , #subtext {
+    color: #E5E7EB;
+    text-decoration: none;    
+}
+#buttonHeader {
     margin-bottom: 16px;
-    border: 0;
+    border: 0;    
 }
-
+.image1 {
+    background-color: #4b4b4b;
+    margin-right: 40px;
+    margin-left: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;  
+    color: #E5E7EB;
+}
 button {
     background-color: #3882f6;
-    border-radius: 180px;
-    width: 120px;
-}
-
-a , #a {
+    border-radius: 5px;
+    width: 90px;
+    height: 25px;
     color: #E5E7EB;
-    text-decoration: none;
+    font-weight: 500;
 }
-
 .second-p {
     text-align: center;
     font-weight: 900;
