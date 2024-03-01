@@ -111,19 +111,27 @@ button {
     text-align: end;
     font-weight: bold;
 }
-.message > p {
-    margin: 40px;
+.boxSupport {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
-.blue-button {
+.blueSquare {
     display: flex;
     background-color: #3882f6;
-    margin: 40px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    width: auto;
 }
-
-.s-button {
-    margin-left: auto;
+.blueSquare > div > p {
+    color: #E5E7EB;
+    font-size: small;
 }
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -131,8 +139,5 @@ button {
     right: 0;
     display: flex;
     justify-content: center;
-}
-
-.p-footer {
-    color: #F9FAF8
+    align-items: center;
 }
