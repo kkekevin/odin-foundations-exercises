@@ -63,6 +63,7 @@ a , #subtext {
     width: 500px;
     height: 300px;  
     color: #E5E7EB;
+
 }
 button {
     background-color: #3882f6;
@@ -72,16 +73,33 @@ button {
     color: #E5E7EB;
     font-weight: 500;
 }
-.second-p {
-    text-align: center;
-    font-weight: 900;
+.images {
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
 }
-
-.second-l {
+.images > li {
+    border: 3px;
+    border-color: #3882f6;
+    background-color: #3882f6;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+.subtext{
     justify-content: center;
     gap: 10px;
-} 
-
+    margin-bottom: 100px;
+}
+.subtext > li {
+    width: 120px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: smaller;
+    color: #9498a1;
+    width: 115px;
+    margin-left: 4px;
+}
 .third-p {
     font-style: italic;
     color: #1F2937;
