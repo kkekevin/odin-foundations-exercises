@@ -31,10 +31,10 @@ ul {
     display: flex;
     height: 400px;
 }
-.t-content {
+.message {
     background-color: #E5E7EB;
     padding: 40px;
-    padding-top: 15px;
+    margin: auto;
 }
 
 #title {
@@ -64,7 +64,6 @@ a , #subtext {
     width: 500px;
     height: 200px;  
     color: #E5E7EB;
-
 }
 button {
     background-color: #3882f6;
@@ -101,12 +100,20 @@ button {
     width: 115px;
     margin-left: 4px;
 }
-.third-p {
+.quote {
     font-style: italic;
     color: #1F2937;
-    font-size: 36px;
+    font-size: 20px;
+    text-align: start;
+    margin: 40px;
 }
-
+.quote + p {
+    text-align: end;
+    font-weight: bold;
+}
+.message > p {
+    margin: 40px;
+}
 .blue-button {
     display: flex;
     background-color: #3882f6;
